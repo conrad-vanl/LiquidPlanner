@@ -1,4 +1,4 @@
-require './lib/liquidplanner'
+require './lib/liquidplanner/version'
 
 Gem::Specification.new do |s|
   s.name        = "liquidplanner"
