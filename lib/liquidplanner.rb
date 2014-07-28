@@ -1,7 +1,6 @@
 $:.push File.expand_path(".", File.dirname(__FILE__))
 
 module LiquidPlanner
-  VERSION      = "0.0.7"
   API_BASE_URL = "https://app.liquidplanner.com/api"
 end
 
@@ -9,6 +8,7 @@ require "active_resource"
 require "net/http/post/multipart" # for uploading documents
 
 # could also glob these paths and require all matches...
+require "liquidplanner/version"
 require "liquidplanner/base"
 require "liquidplanner/liquidplanner_resource"
 require "liquidplanner/resources/workspace_resource"
